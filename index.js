@@ -154,7 +154,10 @@ vm = new Vue({
       OSV: [],
       pedestrian: [],
              },
-    active_state: null,
+     toggles: {
+      'Timer': [],
+    },
+     active_state: null,
   },
   methods: {
     set_active_state: function(name) {
