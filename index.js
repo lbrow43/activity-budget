@@ -143,21 +143,23 @@ vm = new Vue({
   el: '#app',
   data: {
     states: {
-      rest: [],
-      feed: [],
-      preen: [],
-      move: [],
-      alert: [],
-      other: [],
+      Singing: [],
+      PerchNoSing: [],
+      Foraging: [],
+      Preening: [],
+      Flying: [],
+      Unknown: [],
     },
     events: {
-      OSV: [],
-      pedestrian: [],
-             },
-     toggles: {
-      'Timer': [],
+      Head: [],
+      ChangePos: [],
+      Chat: [],
+      Hew: [],
     },
-     active_state: null,
+    toggles: {
+      'Out of sight': [],
+    },
+    active_state: null,
   },
   methods: {
     set_active_state: function(name) {
